@@ -15,6 +15,8 @@ public class App {
 
 				if (num > 1000) {
 					output = "invalid";
+				} else if (input.getBytes().length > 1) {
+					output = "invalid";
 				} else {
 					if (input.contains("3")) {
 						if (num%3 == 0) {
