@@ -15,18 +15,21 @@ public class App {
 
 				if (num > 1000) {
 					output = "invalid";
-				} else if (input.contains("3")) {
-					if (num%3 == 0) {
-						output = "dumb";
-					} else {
-						output = "stupid";
-					}
-				} else if (num%3 == 0) {
-						output = "idiot";
 				} else {
-					output = "invalid";
+					if (input.contains("3")) {
+						if (num%3 == 0) {
+							output = "dumb";
+						} else {
+							output = "stupid";
+						}
+					} else {
+						if (num%3 == 0) {
+							output = "idiot";
+						} else {
+							output = "smart";
+						}
+					}
 				}
-
 			} catch (NumberFormatException e) {
 				output = "invalid";
 			}
