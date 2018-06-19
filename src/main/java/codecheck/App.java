@@ -14,11 +14,17 @@ public class App {
 
 				if (num > 1000) {
 					output = "invalid";
-				} else {
-					if (num%3 == 0) {
+				} else if (input.contains("3")) {
+					if num%3 == 0) {
+						output = "dumb";
+					} else {
+						output = "stupid";
+					}
+				} else if (num%3 == 0) {
 						output = "idiot";
 					}
-				}
+				} else {
+					output = "invalid";
 
 			} catch (NumberFormatException e) {
 				output = "invalid";
